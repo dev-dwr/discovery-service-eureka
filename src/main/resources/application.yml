@@ -1,0 +1,14 @@
+
+server:
+  port: 8761
+
+#eureka.client.register-with-eureka: false
+#– parametr dotyczy tego, czy mamy się sami rejestrować w serwerze, proponujemy tutaj ustawić wartość false, ustawienie
+# wartości true spowoduje, że na liście aplikacji będziemy widzieć też aplikację naszego serwera
+# eureka.client.fetch-registry: false – parametr dotyczący tego, czy powinien być pobierany rejestr usług.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
